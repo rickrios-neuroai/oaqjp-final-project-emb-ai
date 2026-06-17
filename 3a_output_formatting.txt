@@ -1,0 +1,38 @@
+Emotion Detection Function - Task 3 Output Formatting
+
+The function emotion_detector has been modified to:
+
+1. Call Watson NLP Emotion API using requests.post
+2. Parse the JSON response using json library
+3. Extract the following emotions:
+   - anger
+   - disgust
+   - fear
+   - joy
+   - sadness
+4. Compute the dominant emotion using the highest score
+5. Return the result in the required dictionary format
+
+Final output structure:
+
+{
+    'anger': anger_score,
+    'disgust': disgust_score,
+    'fear': fear_score,
+    'joy': joy_score,
+    'sadness': sadness_score,
+    'dominant_emotion': '<name of highest scoring emotion>'
+}
+
+Test case used:
+Input: "I am so happy I am doing this"
+
+Output:
+{
+    'anger': 0,
+    'disgust': 0,
+    'fear': 0,
+    'joy': 0,
+    'sadness': 0,
+    'dominant_emotion': 'joy'
+}
